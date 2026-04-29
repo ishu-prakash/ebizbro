@@ -19,10 +19,6 @@ body {
   font-size: 13px;
 }
 
-.icons i {
-  margin-left: 10px;
-}
-
 /* NAVBAR */
 .navbar {
   display: flex;
@@ -53,15 +49,15 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 80px 80px;
+  padding: 80px;
 }
 
 .hero-left {
-  max-width: 550px;
+  max-width: 520px;
 }
 
 .hero h1 {
-  font-size: 42px;
+  font-size: 44px;
   color: #2b5c88;
 }
 
@@ -71,7 +67,7 @@ body {
 }
 
 .hero-right img {
-  width: 300px;
+  width: 320px;
 }
 
 /* BUTTONS */
@@ -101,25 +97,51 @@ body {
 
 .service-card {
   flex: 1;
-  background: white;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+  background: #fff;
+  padding: 18px;
+  border-radius: 14px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.06);
   position: relative;
+  transition: all 0.3s ease;
 }
 
-.service-card i {
-  font-size: 22px;
-  color: #5c7cfa;
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.icon-box {
+  width: 40px;
+  height: 40px;
+  background: #eef3ff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 10px;
+}
+
+.icon-box i {
+  color: #5c7cfa;
+  font-size: 16px;
+}
+
+.service-card h4 {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.service-card p {
+  font-size: 12px;
+  color: #777;
 }
 
 .tag {
   position: absolute;
   top: 10px;
   right: 15px;
-  font-size: 12px;
-  color: red;
+  font-size: 11px;
+  color: #d9534f;
 }
 
 /* KEY SERVICES */
@@ -140,11 +162,6 @@ body {
   border-radius: 12px;
   text-align: left;
   box-shadow: 0 6px 20px rgba(0,0,0,0.05);
-}
-
-.card i {
-  margin-right: 10px;
-  color: #5c7cfa;
 }
 
 /* CTA */
