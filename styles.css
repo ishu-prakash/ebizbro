@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -13,48 +13,57 @@ body {
 .navbar {
   display: flex;
   justify-content: space-between;
-  padding: 20px 60px;
-  background: white;
+  padding: 18px 60px;
+  background: #fff;
   align-items: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.logo {
+  font-weight: 600;
+  font-size: 20px;
 }
 
 .navbar nav a {
   margin: 0 12px;
   text-decoration: none;
-  color: #333;
-  font-weight: 500;
+  color: #444;
+  font-size: 14px;
 }
 
-.btn-outline {
+.login-btn {
   border: 1px solid #333;
-  padding: 8px 16px;
+  padding: 6px 14px;
   border-radius: 20px;
 }
 
 /* HERO */
 .hero {
   text-align: center;
-  padding: 80px 20px;
+  padding: 90px 20px 50px;
 }
 
 .hero h1 {
-  font-size: 48px;
+  font-size: 44px;
   color: #2b5c88;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .hero p {
   max-width: 700px;
-  margin: 20px auto;
+  margin: 18px auto;
   color: #666;
-  line-height: 1.6;
+  font-size: 15px;
 }
 
-/* BUTTONS */
-.btn-primary {
-  background: #1c3d5a;
+.buttons {
+  margin-top: 25px;
+}
+
+.btn-dark {
+  background: #1f3c55;
   color: white;
-  padding: 12px 28px;
+  padding: 12px 26px;
   border-radius: 30px;
   text-decoration: none;
   margin-right: 10px;
@@ -64,67 +73,60 @@ body {
 .btn-whatsapp {
   border: 2px solid #25d366;
   color: #25d366;
-  padding: 12px 28px;
+  padding: 12px 26px;
   border-radius: 30px;
   text-decoration: none;
 }
 
-/* SERVICES GRID */
+/* SERVICES */
 .services {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  gap: 22px;
   padding: 40px 80px;
 }
 
-.service-card {
-  background: white;
+.card {
+  background: #fff;
   padding: 20px;
   border-radius: 12px;
-  text-align: left;
   box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+  font-size: 14px;
   font-weight: 500;
 }
 
 /* KEY SERVICES */
-.key-services {
-  padding: 60px 80px;
+.key {
+  padding: 50px 80px;
   text-align: center;
 }
 
-.key-services h2 {
+.key h2 {
+  font-size: 22px;
   margin-bottom: 30px;
-  font-size: 26px;
 }
 
-.grid {
+.key-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 
-.card {
-  background: white;
-  padding: 20px;
-  border-radius: 12px;
-  text-align: left;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.06);
-}
-
 /* CTA */
 .cta {
+  margin-top: 60px;
   background: linear-gradient(to right, #0f2a3d, #1e3c52);
-  color: white;
-  text-align: center;
   padding: 80px 20px;
+  text-align: center;
+  color: white;
 }
 
 .cta h2 {
-  font-size: 28px;
+  font-size: 26px;
   margin-bottom: 10px;
 }
 
 .cta p {
-  margin-bottom: 20px;
   color: #cbd5e1;
+  margin-bottom: 20px;
 }
