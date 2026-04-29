@@ -28,10 +28,6 @@ body {
   align-items: center;
 }
 
-.logo {
-  font-weight: 600;
-}
-
 .navbar nav a {
   margin: 0 12px;
   text-decoration: none;
@@ -50,20 +46,20 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 80px;
+  background: linear-gradient(to bottom, #f8fbff, #ffffff);
 }
 
-.hero-left {
-  max-width: 520px;
-}
-
-.hero h1 {
-  font-size: 44px;
+.hero-left h1 {
+  font-size: 48px;
   color: #2b5c88;
+  font-weight: 700;
+  line-height: 1.2;
 }
 
-.hero p {
-  margin: 15px 0;
-  color: #666;
+.hero-left p {
+  margin: 18px 0;
+  color: #6b7280;
+  line-height: 1.7;
 }
 
 .hero-right img {
@@ -74,17 +70,18 @@ body {
 .btn-dark {
   background: #1f3c55;
   color: white;
-  padding: 12px 24px;
-  border-radius: 25px;
+  padding: 13px 28px;
+  border-radius: 30px;
   text-decoration: none;
-  margin-right: 10px;
+  margin-right: 12px;
+  display: inline-block;
 }
 
 .btn-wa {
   border: 2px solid #25d366;
   color: #25d366;
-  padding: 12px 24px;
-  border-radius: 25px;
+  padding: 13px 28px;
+  border-radius: 30px;
   text-decoration: none;
 }
 
@@ -92,7 +89,8 @@ body {
 .services {
   display: flex;
   gap: 20px;
-  padding: 30px 80px;
+  padding: 40px 80px;
+  margin-top: 20px;
 }
 
 .service-card {
@@ -120,22 +118,6 @@ body {
   margin-bottom: 10px;
 }
 
-.icon-box i {
-  color: #5c7cfa;
-  font-size: 16px;
-}
-
-.service-card h4 {
-  font-size: 14px;
-  font-weight: 600;
-  margin-bottom: 5px;
-}
-
-.service-card p {
-  font-size: 12px;
-  color: #777;
-}
-
 .tag {
   position: absolute;
   top: 10px;
@@ -146,8 +128,10 @@ body {
 
 /* KEY SERVICES */
 .key {
-  padding: 60px 80px;
+  padding: 70px 80px;
   text-align: center;
+  background: #f6f8fc;
+  margin-top: 40px;
 }
 
 .grid {
@@ -166,9 +150,9 @@ body {
 
 /* CTA */
 .cta {
-  margin-top: 60px;
+  margin-top: 80px;
   background: linear-gradient(to right, #0f2a3d, #1e3c52);
-  padding: 80px 20px;
+  padding: 90px 20px;
   text-align: center;
   color: white;
 }
