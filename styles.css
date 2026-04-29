@@ -6,7 +6,21 @@
 }
 
 body {
-  background: #f5f7fb;
+  background: #f4f7fb;
+}
+
+/* TOPBAR */
+.topbar {
+  background: #0f2a3d;
+  color: white;
+  padding: 8px 60px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+}
+
+.icons i {
+  margin-left: 10px;
 }
 
 /* NAVBAR */
@@ -14,24 +28,21 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 18px 60px;
-  background: #fff;
+  background: white;
   align-items: center;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
 .logo {
   font-weight: 600;
-  font-size: 20px;
 }
 
 .navbar nav a {
   margin: 0 12px;
   text-decoration: none;
   color: #444;
-  font-size: 14px;
 }
 
-.login-btn {
+.login {
   border: 1px solid #333;
   padding: 6px 14px;
   border-radius: 20px;
@@ -39,77 +50,101 @@ body {
 
 /* HERO */
 .hero {
-  text-align: center;
-  padding: 90px 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 80px;
+}
+
+.hero-left {
+  max-width: 550px;
 }
 
 .hero h1 {
-  font-size: 44px;
+  font-size: 42px;
   color: #2b5c88;
-  font-weight: 600;
 }
 
 .hero p {
-  max-width: 700px;
-  margin: 18px auto;
+  margin: 15px 0;
   color: #666;
-  font-size: 15px;
 }
 
-.buttons {
-  margin-top: 25px;
+.hero-right img {
+  width: 300px;
 }
 
+/* BUTTONS */
 .btn-dark {
   background: #1f3c55;
   color: white;
-  padding: 12px 26px;
-  border-radius: 30px;
+  padding: 12px 24px;
+  border-radius: 25px;
   text-decoration: none;
   margin-right: 10px;
-  display: inline-block;
 }
 
-.btn-whatsapp {
+.btn-wa {
   border: 2px solid #25d366;
   color: #25d366;
-  padding: 12px 26px;
-  border-radius: 30px;
+  padding: 12px 24px;
+  border-radius: 25px;
   text-decoration: none;
 }
 
 /* SERVICES */
 .services {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 22px;
-  padding: 40px 80px;
+  display: flex;
+  gap: 20px;
+  padding: 30px 80px;
 }
 
-.card {
-  background: #fff;
+.service-card {
+  flex: 1;
+  background: white;
   padding: 20px;
   border-radius: 12px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.06);
-  font-size: 14px;
-  font-weight: 500;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+  position: relative;
+}
+
+.service-card i {
+  font-size: 22px;
+  color: #5c7cfa;
+  margin-bottom: 10px;
+}
+
+.tag {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 12px;
+  color: red;
 }
 
 /* KEY SERVICES */
 .key {
-  padding: 50px 80px;
+  padding: 60px 80px;
   text-align: center;
 }
 
-.key h2 {
-  font-size: 22px;
-  margin-bottom: 30px;
-}
-
-.key-grid {
+.grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: left;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+}
+
+.card i {
+  margin-right: 10px;
+  color: #5c7cfa;
 }
 
 /* CTA */
@@ -121,12 +156,19 @@ body {
   color: white;
 }
 
-.cta h2 {
-  font-size: 26px;
-  margin-bottom: 10px;
+/* FLOATING */
+.floating {
+  position: fixed;
+  right: 10px;
+  top: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.cta p {
-  color: #cbd5e1;
-  margin-bottom: 20px;
+.floating i {
+  background: #1f3c55;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
 }
